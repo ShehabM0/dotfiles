@@ -1,0 +1,46 @@
+--- GLOBAL ---
+v                   VISUAL
+<S-v>               VISUAL LINE
+<C-v>               VISUAL BLOCK
+gg                  Begin of file
+<S-G>               End of file
+<C-v> hjkl c HUH    Replace block of text with HUH
+
+--- COPY ---
+ggVG                <C-a>
+y                   Copy
+dd                  Cut
+P                   Paste before
+p                   Paste after
+"*y  OR :%y*        Copy to clipboards
+"*p  OR <S-insert>  Paste from clipboards
+
+--- SHIFTING ---
+<                   LEFT SHIFTING
+>                   RIGHT SHIFTING
+.                   Repeat last shift
+
+--- COMMENTS ---
+<C-v> <S-i> // <Esc> <Esc>
+
+--- SEARCH ---
+/'word'
+n                   Next Occurrence
+N                   Prev Occurrence
+:%s/foo/bar/g		Replace all occurrence of foo by bar
+
+
+
+
+<CR> is Enter key
+nnoremap <C-b> :NERDTreeToggle<CR>
+
+nnoremap – Allows you to map keys in normal mode.
+inoremap – Allows you to map keys in insert mode.
+vnoremap – Allows you to map keys in visual mode
+
+" Enable auto completion menu after pressing TAB.
+set wildmenu
+
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
