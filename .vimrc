@@ -14,6 +14,7 @@ set statusline+=%F	"Show full path
 "Long lines wrapped to next line
 set wrap
 set hlsearch
+set clipboard=unnamed "Enables yanking to clipboard
 
 set shiftwidth=4
 set tabstop=4
@@ -30,16 +31,11 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 
-
-
-
 "Append template to new C++ files
 autocmd BufNewFile *.cpp 0r ~/.vim/template.cpp
+autocmd filetype cpp nnoremap <F9> :w <bar> !build.sh %:r <CR>
 
-
-
-
-" Prevent []], ()), {}}
+"Prevent []], ()), {}}
 function! CheckCharacter(char)
 
 	let line_num = line('.')
@@ -61,7 +57,10 @@ function! CheckQuotation(char)
 	let current_line = getline(line_num)
 	let col_num = col('.')
 
-	if current_line[col_num] != a:char
+	if(col_num == 1)
+		execute "normal! i" . a:char . a:char
+		normal! h
+	elseif current_line[col_num] != a:char
 		execute "normal! a" . a:char . a:char
 		normal! h
 	else
