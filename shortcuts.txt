@@ -5,6 +5,8 @@ v                   VISUAL
 gg                  Begin of file
 <S-G>               End of file
 <C-v> hjkl c HUH    Replace block of text with HUH
+<S-{>				Move to prev empty line
+<s-}>				Move to next empty line
 
 --- COPY ---
 ggVG                <C-a>
@@ -29,18 +31,20 @@ n                   Next Occurrence
 N                   Prev Occurrence
 :%s/foo/bar/g		Replace all occurrence of foo by bar
 
+--- DELETE ---
+s 					Delete character and insert
+cc					Delete line and insert
+da{					Delete function scope
+
 
 
 
 <CR> is Enter key
-nnoremap <C-b> :NERDTreeToggle<CR>
-
 nnoremap – Allows you to map keys in normal mode.
 inoremap – Allows you to map keys in insert mode.
 vnoremap – Allows you to map keys in visual mode
 
 " Enable auto completion menu after pressing TAB.
 set wildmenu
-
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
