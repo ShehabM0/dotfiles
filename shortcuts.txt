@@ -30,6 +30,7 @@ p                   Paste after
 n                   Next Occurrence
 N                   Prev Occurrence
 :%s/foo/bar/g		Replace all occurrence of foo by bar
+<S-#>               Search current word from cursor to end
 
 --- DELETE ---
 s 					Delete character and insert
