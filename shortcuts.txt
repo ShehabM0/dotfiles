@@ -6,7 +6,7 @@ gg                  Begin of file
 <S-G>               End of file
 <C-v> hjkl c HUH    Replace block of text with HUH
 <S-{>				Move to prev empty line
-<s-}>				Move to next empty line
+<S-}>				Move to next empty line
 
 --- COPY ---
 ggVG                <C-a>
@@ -35,12 +35,20 @@ N                   Prev Occurrence
 --- DELETE ---
 s 					Delete character and insert
 cc					Delete line and insert
-da{					Delete function scope
+da{,',"				Delete scope character included
+di{,',"             Delete scope character not-included
+
+--- UNDO && REDO ---
+u                   Undo last change
+<C-r>               Redo last change
 
 
+<CR> Enter key
+<Esc> Escape key
+<S> Shift key
+<C> Ctrl key
+<bar> | (delimeter) key for executing multiple commands
 
-
-<CR> is Enter key
 nnoremap – Allows you to map keys in normal mode.
 inoremap – Allows you to map keys in insert mode.
 vnoremap – Allows you to map keys in visual mode
