@@ -3,10 +3,12 @@ v                   VISUAL
 <S-v>               VISUAL LINE
 <C-v>               VISUAL BLOCK
 gg                  Begin of file
+<digit>gg           Go to line <digit>
 <S-G>               End of file
 <C-v> hjkl c HUH    Replace block of text with HUH
 <S-{>				Move to prev empty line
 <S-}>				Move to next empty line
+<S-i>               Insert to beginning of line
 
 --- COPY ---
 ggVG                <C-a>
