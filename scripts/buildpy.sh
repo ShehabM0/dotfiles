@@ -6,23 +6,21 @@ BOLDGREEN="\e[1;32m"
 ITALICYELLOW="\e[3;33m"
 clear
 
-source_file="$1.cpp"
-temp_file="temp.cpp"
+source_file="$1.py"
+temp_file="temp.py"
 if [ ! -f $temp_file ]; then
     touch "$temp_file"
 fi
-getDiff=$(diff temp.cpp $1.cpp)
+getDiff=$(diff temp.py $1.py)
 
 if [ "$getDiff" ]; then
     echo -e "${ITALICYELLOW}The file has been edited.${ENDCOLOR}"
-    cp "$1.cpp" "temp.cpp"
-    g++ $1.cpp -o $1
+    cp "$1.py" "temp.py"
 else
     echo -e "${ITALICYELLOW}No changes on the file.${ENDCOLOR}"
 fi
 
 echo -e "${BOLDGREEN}Compilled and running...${ENDCOLOR}"
-./$1
+python3 $1.py
 
-# g++ -static -DLOCAL -lm -s -x c++ -Wall -Wextra -O2 -std=c++17 -o $1 $1.cpp
 

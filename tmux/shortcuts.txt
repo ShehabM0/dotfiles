@@ -1,13 +1,13 @@
-tmux attach			Get into last session
-tmux ls				List all sessions
+tmux attach	Get into last session
+tmux ls		List all sessions
 
-<P-d> 				Exit session
-<P-x>				Kill pane
-exit				Kill pane
+<P-d> 		Exit session
+<P-x>		Kill pane
+exit		Kill pane
 
-<P-%>				New vertical pane
-<P-"">				New horizontal pane
+<P-%>		New vertical pane
+<P-"">		New horizontal pane
 
-<P-c>               Create new window
-<P-n>               Next window
-<P-p>               Previous window
+<P-c>		Create new window
+<P-n>		Next window
+<P-p>		Previous window

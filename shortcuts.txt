@@ -1,13 +1,13 @@
 --- GLOBAL ---
-v                   VISUAL
+t                   VISUAL
 <S-v>               VISUAL LINE
 <C-v>               VISUAL BLOCK
 gg                  Begin of file
 <digit>gg           Go to line <digit>
 <S-G>               End of file
 <C-v> hjkl c HUH    Replace block of text with HUH
-<S-{>				Move to prev empty line
-<S-}>				Move to next empty line
+<S-{>               Move to prev empty line
+<S-}>               Move to next empty line
 <S-i>               Insert to beginning of line
 
 --- COPY ---
@@ -19,10 +19,10 @@ p                   Paste after
 "*y  OR :%y*        Copy to clipboards
 "*p  OR <S-insert>  Paste from clipboards
 
---- SHIFTING ---
-<                   LEFT SHIFTING
->                   RIGHT SHIFTING
-.                   Repeat last shift
+--- INDENTS ---
+>>                  Indent
+<<                  Unindent
+.                   Repeat last Indent/Unindent
 
 --- COMMENTS ---
 <C-v> <S-i> // <Esc> <Esc>
@@ -31,13 +31,13 @@ p                   Paste after
 /'word'
 n                   Next Occurrence
 N                   Prev Occurrence
-:%s/foo/bar/g		Replace all occurrence of foo by bar
+:%s/foo/bar/g       Replace all occurrence of foo by bar
 <S-#>               Search current word from cursor to end
 
 --- DELETE ---
-s 					Delete character and insert
-cc					Delete line and insert
-da{,',"				Delete scope character included
+s                   Delete character and insert
+cc                  Delete line and insert
+da{,',"             Delete scope character included
 di{,',"             Delete scope character not-included
 
 --- UNDO && REDO ---
