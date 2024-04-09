@@ -11,3 +11,4 @@ exit		Kill pane
 <P-c>		Create new window
 <P-n>		Next window
 <P-p>		Previous window
+<P-,>       Rename window

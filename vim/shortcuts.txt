@@ -10,6 +10,11 @@ gg                  Begin of file
 <S-}>               Move to next empty line
 <S-i>               Insert to beginning of line
 
+--- VISUAL ---
+w                   Beginning of Next word
+e                   End of Current word
+iw                  Inner word
+
 --- COPY ---
 ggVG                <C-a>
 y                   Copy
