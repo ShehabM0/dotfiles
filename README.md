@@ -1,6 +1,6 @@
 ### Suckless Debian12 Minimal Installation.
 ---
-The following video provides a step-by-step guide to installing a minimal Debian12 system using Suckless tools:
+The following video provides a step-by-step guide for minimal Debian12 system post-installation using Suckless tools:
 
 - `dwm (dynamic window manager)`: A window manager.
 - `st (simple terminal)`: A terminal emulator.
