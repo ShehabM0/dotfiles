@@ -1,7 +1,11 @@
 "Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'	"Theme
-Plug 'drsooch/gruber-darker-vim' "Theme
+"Themes
+Plug 'morhetz/gruvbox'	
+Plug 'drsooch/gruber-darker-vim'
+"FileFinder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "Show line numbers
@@ -40,6 +44,10 @@ let g:gruvbox_improved_strings=10
 "let g:gruber_terminal_italic=0
 "let g:gruber_terminal_bold=1
 
+"fzf
+let g:fzf_vim = {}
+let g:fzf_preview_window = []
+
 "Auto Bracket
 inoremap ( ()<left>
 inoremap [ []<left>
@@ -54,6 +62,7 @@ autocmd filetype perl set filetype=prolog
 
 "Prevent []], ()), {}}
 function! CheckCharacter(char)
+
 
 	let line_num = line('.')
 	let current_line = getline(line_num)
@@ -70,10 +79,11 @@ endfunction
 
 function! CheckQuotation(char)
 
+    echom "Tab width set to "
 	let line_num = line('.')
 	let current_line = getline(line_num)
 	let col_num = col('.')
-	
+
 	if(col_num == 1)
 		execute "normal! i" . a:char . a:char
 		normal! h
@@ -91,5 +101,6 @@ inoremap " <C-c>:call CheckQuotation("\"")<CR>a
 inoremap ) <C-c>:call CheckCharacter(')')<CR>a
 inoremap ] <C-c>:call CheckCharacter(']')<CR>a
 inoremap } <C-c>:call CheckCharacter('}')<CR>a
+nnoremap <C-p> :Files<CR>
 
 

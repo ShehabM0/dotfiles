@@ -5,10 +5,11 @@ t                   VISUAL
 gg                  Begin of file
 <digit>gg           Go to line <digit>
 <S-G>               End of file
-<C-v> hjkl c HUH    Replace block of text with HUH
+<C-v> foo c bar     Replace block of text with bar
 <S-{>               Move to prev empty line
 <S-}>               Move to next empty line
 <S-i>               Insert to beginning of line
+J                   Merge two lines into one
 
 --- VISUAL ---
 w                   Beginning of Next word
@@ -42,6 +43,9 @@ N                   Prev Occurrence
 --- DELETE ---
 s                   Delete character and insert
 cc                  Delete line and insert
+x                   Delete Single character after curosr
+X                   Delete Single character before curosr
+D                   Delete from cursro to end of line
 da{,',"             Delete scope character included
 di{,',"             Delete scope character not-included
 
