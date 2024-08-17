@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# This script renames files and directories by removing special characters (brackets, parentheses, and spaces) from their names. It replaces spaces with underscores and simply removes the other characters.
+# This script renames files and directories by removing special characters (brackets, parentheses, and spaces) from their names.
+# It replaces spaces with underscores and simply removes the other characters.
 
 GREEN="\e[32m"
 YELLOW="\e[33m"
