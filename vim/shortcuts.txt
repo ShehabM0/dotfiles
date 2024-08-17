@@ -10,11 +10,15 @@ gg                  Begin of file
 <S-}>               Move to next empty line
 <S-i>               Insert to beginning of line
 J                   Merge two lines into one
+:%!                 Run Unix commands within VIM
+<C-a>               Increase number under cursor by one
+<C-x>               Decrease number under cursor by one
 
 --- VISUAL ---
 w                   Beginning of Next word
 e                   End of Current word
 iw                  Inner word
+g_                  Go to the last non-blank character of the line
 
 --- COPY ---
 ggVG                <C-a>
@@ -64,7 +68,3 @@ nnoremap – Allows you to map keys in normal mode.
 inoremap – Allows you to map keys in insert mode.
 vnoremap – Allows you to map keys in visual mode
 
-" Enable auto completion menu after pressing TAB.
-set wildmenu
-set wildmode=list:longest
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx

@@ -103,4 +103,3 @@ inoremap ] <C-c>:call CheckCharacter(']')<CR>a
 inoremap } <C-c>:call CheckCharacter('}')<CR>a
 nnoremap <C-p> :Files<CR>
 
-

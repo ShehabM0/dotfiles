@@ -8,11 +8,9 @@ clear
 
 source_file="$1.py"
 temp_file="temp.py"
-
 if [ ! -f $temp_file ]; then
     touch "$temp_file"
 fi
-
 getDiff=$(diff temp.py $1.py)
 
 if [ "$getDiff" ]; then
