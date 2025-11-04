@@ -1,4 +1,5 @@
 #!/bin/bash
+#fontselect: (Arial, 400, 0) -> /usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf, 0, LiberationSans
 
 MOVIE="$1"
 SUBTITLE="$2"
