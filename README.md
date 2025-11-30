@@ -3,13 +3,22 @@
 
 ## System Overview
 - **OS**: Debian 12
-- **Window Manager**: dwm (dynamic window manager)
-- **display server protocol**: X11
-- **App Launcher**: dmenu (desktop menu)
-- **Status bar**: dwm-status
-- **Terminal**: st (simple terminal)
-- **Shell**: Zsh
-- **Audio manager**: pipewire + alsamixer
+  - **display server protocol**: X11
+  - **Window Manager**: dwm (dynamic window manager)
+  - **App Launcher**: dmenu (desktop menu)
+  - **Terminal**: st (simple terminal)
+  - **Status bar**: dwm-status
+  - **Shell**: Zsh
+  - **Audio manager**: pipewire + alsamixer
+
+- **OS**: Arch
+  - **display server protocol**: Wayland
+  - **Window Manager**: Hyprland
+  - **App Launcher**: Walker
+  - **Terminal**: Alacritty
+  - **Status bar**: Waybar
+  - **Shell**: Zsh
+  - **Audio manager**: pipewire + alsamixer
 
 ## Installation Guide
 - The following video provides a step-by-step guide for minimal Debian12 system post-installation using Suckless tools:
