@@ -159,7 +159,7 @@ sudo ./ 'full name of app'
 du -sh .
 ```
 ---
-### Add Gnome (Desktop/Apps-menu) icon
+### Add (Desktop/Apps-menu) icon
 ```sh
 sudo nano /usr/share/applications/'AppName'.desktop
 
